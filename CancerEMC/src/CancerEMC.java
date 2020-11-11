@@ -30,14 +30,14 @@ public class CancerEMC{
 		System.out.println(dataset1.toSummaryString());
 		System.out.println("For Dataset SD1");
 		
-		//cancerEMC(dataset1);
+		cancerEMC(dataset1);
 		
 		
 		Instances dataset2= new Instances(new BufferedReader(new FileReader("Sub-dataset2 (SD2).arff")));
 		System.out.println(dataset2.toSummaryString());
 		System.out.println("For Dataset SD2");
 		
-		//cancerEMC(dataset2);
+		cancerEMC(dataset2);
 		
 		
 		
@@ -45,14 +45,14 @@ public class CancerEMC{
 		System.out.println(dataset3.toSummaryString());
 		System.out.println("For Dataset SD3");
 		
-		//cancerEMC(dataset3);
+		cancerEMC(dataset3);
 		
 		
 		Instances dataset4= new Instances(new BufferedReader(new FileReader("Sub-dataset4 (SD4).arff")));
 	//	System.out.println(dataset4.toSummaryString());
 		System.out.println("For Dataset SD4 befor oversampling");
 		
-		//cancerEMC(dataset4);
+		cancerEMC(dataset4);
 		
 		/*
 		Instances dataset5= new Instances(new BufferedReader(new FileReader("BinaryRFfeature.arff")));
@@ -75,14 +75,14 @@ public class CancerEMC{
 		cancerEMC(Smote);
 		
 	
-		System.out.println("After SMOTE for Dataset SD4\\n");
+		System.out.println("After SMOTE on Dataset SD4\\n");
 		String[] options=new String[2];
 		options[0]="-P"; options[1]="500"; //We can the set the require percentage to mirority classes
 	        SMOTE smote=new SMOTE();
 	        smote.setOptions(options);
 	        smote.setInputFormat(dataset6);
 		Instances newdata=Filter.useFilter(dataset6, smote);
-		cancerEMC(newdata);
+		//cancerEMC(newdata);
 		
 		
 		System.out.println("The END");
