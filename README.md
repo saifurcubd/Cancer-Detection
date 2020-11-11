@@ -24,6 +24,13 @@ All associated data files are here.
 **Figures:**\
 Contain all figures are available in high resolution.
 
+**CancerEMC:**\
+Java J2EE project directories with Weka API of CancerEMC method implementation.\
+
+
+CancerEMC.ipyth is a complete python notebooke for CancerEMC method. It is contain the python source code for data analysis and visualization, feature sectection, oversampling/undersampling techniques and CancerEMC method along with result visualization using ROC cure and Convexhull Roc curve.
+
+
 
 
 
