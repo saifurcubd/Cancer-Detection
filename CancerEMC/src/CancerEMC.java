@@ -27,14 +27,14 @@ public class CancerEMC{
 		System.out.println("Welcome to CancerEMC\n");
 		
 		Instances dataset1= new Instances(new BufferedReader(new FileReader("Sub-dataset1 (SD1).arff")));
-	//	System.out.println(dataset1.toSummaryString());
+		System.out.println(dataset1.toSummaryString());
 		System.out.println("For Dataset SD1");
 		
 		//cancerEMC(dataset1);
 		
 		
 		Instances dataset2= new Instances(new BufferedReader(new FileReader("Sub-dataset2 (SD2).arff")));
-	//	System.out.println(dataset2.toSummaryString());
+		System.out.println(dataset2.toSummaryString());
 		System.out.println("For Dataset SD2");
 		
 		//cancerEMC(dataset2);
@@ -42,7 +42,7 @@ public class CancerEMC{
 		
 		
 		Instances dataset3= new Instances(new BufferedReader(new FileReader("Sub-dataset3 (SD3).arff")));
-	//	System.out.println(dataset3.toSummaryString());
+		System.out.println(dataset3.toSummaryString());
 		System.out.println("For Dataset SD3");
 		
 		//cancerEMC(dataset3);
@@ -59,7 +59,7 @@ public class CancerEMC{
 		System.out.println(dataset5.toSummaryString());
 		System.out.println("For BinaryRFfeature");
 		
-    	cancerEMC(dataset5); 
+    	        cancerEMC(dataset5); 
 		
 		Instances dataset6= new Instances(new BufferedReader(new FileReader("CamcerTypeDataset19Feature.arff")));
 		System.out.println(dataset6.toSummaryString());
@@ -74,16 +74,16 @@ public class CancerEMC{
 		
 		cancerEMC(Smote);
 		
-	/*	
+	
 		System.out.println("After SMOTE for Dataset SD4\\n");
 		String[] options=new String[2];
-		options[0]="-P"; options[1]="500";
-	    SMOTE smote=new SMOTE();
-	    smote.setOptions(options);
-	    smote.setInputFormat(dataset6);
+		options[0]="-P"; options[1]="500"; //We can the set the require percentage to mirority classes
+	        SMOTE smote=new SMOTE();
+	        smote.setOptions(options);
+	        smote.setInputFormat(dataset6);
 		Instances newdata=Filter.useFilter(dataset6, smote);
 		cancerEMC(newdata);
-		*/
+		
 		
 		System.out.println("The END");
 		
@@ -138,7 +138,7 @@ public class CancerEMC{
 		System.out.println(evl.getMetricsToDisplay());
 		System.out.println(evl.toClassDetailsString());
 		
-		
+		/*
 		//RandomForest
 		System.out.println("Random Forest");
 		RandomForest rf= new RandomForest();
@@ -192,8 +192,8 @@ public class CancerEMC{
 			//System.out.println(words[10]);
 		    //NOM: 6.0 6.0 1.0 6.598375308324326E-6 3.6547166745450646E-5 2.2385806391974E-5 2.9441977028248506E-5 4.5127690617743464E-5 5.138797354068844E-7 0.9998593851041728
 		}
+		*/
 
-		
 		
 		
 		String txt=null;
