@@ -10,9 +10,12 @@ Results: Based on the clinical blood test data, we observe that the proposed Can
 **Data directory and Files:**
 
 **Datasets:**
-Dataset1: first dataset that collected from cohen et al. for binary cancer detection
-Dataset2: Second dataset that collected from cohen et al. for localized cancer detection
+Dataset1: first dataset that collected from cohen et al. for binary cancer detection.
 
+Dataset2: Second dataset that collected from cohen et al. for localized cancer detection. \\
+FullDataset: Its consist of all patients data for both binary and localize cancer detection.
+
+SD1: sub-dataset1 for binary binary cancer detection as same as dataset1.
 
 
 
